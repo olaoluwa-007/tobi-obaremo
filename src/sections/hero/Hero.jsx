@@ -10,6 +10,7 @@ const Hero = () => {
       <img
         src={profile}
         alt="Tobi Obaremo"
+        loading="lazy"
         className="w-32 h-32 md:w-40 md:h-40 rounded-full shadow-lg mb-6 object-cover"
       />
 
