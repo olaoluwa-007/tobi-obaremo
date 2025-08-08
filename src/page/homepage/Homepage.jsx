@@ -16,7 +16,7 @@ const Homepage = () => {
           name="description"
           content="Portfolio of Tobi Obaremo, a passionate Full Stack Developer building scalable and modern web applications."
         />
-        <link rel="canonical" href="https://your-deployed-portfolio-link.com" />
+        <link rel="canonical" href="https://tobi-obaremo.vercel.app" />
 
         {/* Open Graph (LinkedIn, Facebook) */}
         <meta
@@ -29,11 +29,11 @@ const Homepage = () => {
         />
         <meta
           property="og:url"
-          content="https://your-deployed-portfolio-link.com"
+          content="https://tobi-obaremo.vercel.app"
         />
         <meta
           property="og:image"
-          content="https://your-deployed-portfolio-link.com/preview.jpg"
+          content="https://tobi-obaremo.vercel.app/preview.jpg"
         />
         <meta property="og:type" content="website" />
 
@@ -49,7 +49,7 @@ const Homepage = () => {
         />
         <meta
           name="twitter:image"
-          content="https://your-deployed-portfolio-link.com/preview.jpg"
+          content="https://tobi-obaremo.vercel.app/preview.jpg"
         />
       </Helmet>
 
