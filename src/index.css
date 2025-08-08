@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans antialiased bg-white text-black dark:bg-black dark:text-white transition-colors duration-300;
+  }
+}
+
+
+@layer components {
+  .btn-primary {
+    @apply bg-coral text-white px-6 py-2 rounded-md hover:bg-opacity-90 dark:hover:bg-opacity-80 transition;
+  }
+
+  .btn-outline {
+    @apply px-6 py-2 border border-coral text-coral rounded-md hover:bg-coral hover:text-white dark:hover:text-white dark:hover:bg-coral transition;
+  }
+
+  .section {
+    @apply py-20 px-4 mx-auto;
+  }
+
+  .heading {
+    @apply text-3xl font-semibold mb-6 text-black dark:text-white;
+  }
+
+  .card {
+    @apply bg-white text-black dark:bg-neutral-900 dark:text-white rounded-lg shadow-md p-6 transition-colors duration-300;
+  }
+
+  .link-hover {
+    @apply hover:text-coral dark:hover:text-mint transition;
+  }
+  
+  
+.input-style {
+  @apply w-full p-3 rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-[#1a1a1a] text-black dark:text-white focus:outline-none focus:ring-2 focus:ring-coral placeholder:text-gray-500 dark:placeholder:text-gray-400;
+}
+
+}
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
