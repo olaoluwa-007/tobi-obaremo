@@ -12,7 +12,7 @@ const Homepage = () => {
     <>
       <Helmet>
         <title>Tobi Obaremo | Full Stack Developer</title>
-        <meta name="google-site-verification" content="google11db73dc334298b8.html"/>
+        <meta name="google-site-verification" content="cNH_e0e9xgVHfR54-Am35EupSonPyJsGROp3hKf8ODk" />
         <meta
           name="description"
           content="Portfolio of Tobi Obaremo, a passionate Full Stack Developer building scalable and modern web applications."
