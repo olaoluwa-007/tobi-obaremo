@@ -4,10 +4,55 @@ import About from "../../sections/about/About";
 import Projects from "../../sections/project/Project";
 import Skills from "../../sections/skill/Skills";
 import Contact from "../../sections/contact/Contact";
+import { Helmet } from "react-helmet-async";
+
 
 const Homepage = () => {
   return (
     <>
+      <Helmet>
+        <title>Tobi Obaremo | Full Stack Developer</title>
+        <meta
+          name="description"
+          content="Portfolio of Tobi Obaremo, a passionate Full Stack Developer building scalable and modern web applications."
+        />
+        <link rel="canonical" href="https://your-deployed-portfolio-link.com" />
+
+        {/* Open Graph (LinkedIn, Facebook) */}
+        <meta
+          property="og:title"
+          content="Tobi Obaremo | Full Stack Developer"
+        />
+        <meta
+          property="og:description"
+          content="Building scalable and modern web applications."
+        />
+        <meta
+          property="og:url"
+          content="https://your-deployed-portfolio-link.com"
+        />
+        <meta
+          property="og:image"
+          content="https://your-deployed-portfolio-link.com/preview.jpg"
+        />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Tobi Obaremo | Full Stack Developer"
+        />
+        <meta
+          name="twitter:description"
+          content="Portfolio showcasing clean, responsive, and modern projects."
+        />
+        <meta
+          name="twitter:image"
+          content="https://your-deployed-portfolio-link.com/preview.jpg"
+        />
+      </Helmet>
+
       <Hero />
       <About />
       <Projects />
