@@ -1,14 +1,27 @@
 import React from "react";
 import resume from "../../assets/files/Tobi-Obaremo-resume.pdf";
 import { FiDownload } from "react-icons/fi";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const About = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+
   return (
     <section
       id="about"
+      ref={ref}
       className="section px-6 sm:px-8 bg-ivory dark:bg-[#111111] transition-colors duration-300"
     >
-      <div className="text-center">
+      <motion.div
+        className="text-center"
+        initial={{ opacity: 0, y: 30 }}
+        animate={inView ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.7 }}
+      >
         <h2 className="heading text-coral">About Me</h2>
 
         <p className="max-w-3xl mx-auto text-base sm:text-lg md:text-xl text-black dark:text-white leading-relaxed">
@@ -36,7 +49,7 @@ const About = () => {
             Download CV
           </a>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

@@ -1,5 +1,19 @@
 import React from "react";
 import { Github, ExternalLink } from "lucide-react";
+import { motion } from "framer-motion";
+
+const cardHover = {
+  rest: { scale: 1, boxShadow: "0px 0px 0px rgba(0,0,0,0)" },
+  hover: {
+    scale: 1.02,
+    boxShadow: "0 8px 20px rgba(0,0,0,0.15)",
+    transition: {
+      duration: 0.3,
+      ease: "easeInOut",
+    },
+  },
+  tap: { scale: 0.98 },
+};
 
 const ProjectCard = ({
   title,
@@ -11,7 +25,14 @@ const ProjectCard = ({
   type,
 }) => {
   return (
-    <div className="relative bg-white dark:bg-zinc-900 rounded-xl shadow-md overflow-hidden transition hover:shadow-lg">
+    <motion.div
+      variants={cardHover}
+      initial="rest"
+      whileHover="hover"
+      whileTap="tap"
+      animate="rest"
+      className="relative bg-white dark:bg-zinc-900 rounded-xl overflow-hidden transition-all"
+    >
       {type && (
         <span className="absolute top-3 right-3 text-xs uppercase bg-gray-200 dark:bg-zinc-700 text-gray-600 dark:text-gray-300 px-3 py-1 rounded-full z-10">
           {type}
@@ -67,7 +88,7 @@ const ProjectCard = ({
           )}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
