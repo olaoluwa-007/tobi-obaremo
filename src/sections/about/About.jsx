@@ -26,7 +26,7 @@ const About = () => {
 
         <p className="max-w-3xl mx-auto text-base sm:text-lg md:text-xl text-black dark:text-white leading-relaxed">
           I'm <span className="font-semibold text-coral">Tobi Obaremo</span>, a
-          passionate Full Stack Developer from Nigeria with a knack for building elegant,
+          passionate web developer and a Full Stack Developer from Nigeria with a knack for building elegant,
           fast, and scalable web apps. I specialize in the{" "}
           <strong>MERN stack</strong> — from crafting pixel-perfect UIs to
           building robust backend APIs.
