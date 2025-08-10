@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className="bg-white dark:bg-black text-black dark:text-white py-6 border-t border-gray-200 dark:border-gray-800">
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
         <p className="text-sm">
-          &copy; {currentYear} Tobi Obaremo. All rights reserved.
+          &copy; {currentYear} Tobi Obaremo - Web Developer in Nigeria. All rights reserved.
         </p>
 
         <div className="flex gap-4 text-xl">

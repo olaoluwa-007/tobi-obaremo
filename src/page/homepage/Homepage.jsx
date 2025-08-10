@@ -12,21 +12,21 @@ const Homepage = () => {
     <>
       <Helmet>
         <meta name="google-site-verification" content="cNH_e0e9xgVHfR54-Am35EupSonPyJsGROp3hKf8ODk" />
-        <title>Tobi Obaremo | Full Stack Developer</title>
+        <title>Web Developer in Nigeria | Tobi Obaremo - Full Stack Developer</title>
         <meta
           name="description"
-          content="Portfolio of Tobi Obaremo, a passionate Full Stack Developer building scalable and modern web applications."
+          content="Tobi Obaremo is a skilled web developer in Nigeria, specializing in building fast, modern, and scalable web applications using the MERN stack."
         />
         <link rel="canonical" href="https://tobi-obaremo.vercel.app" />
 
         {/* Open Graph (LinkedIn, Facebook) */}
         <meta
           property="og:title"
-          content="Tobi Obaremo | Full Stack Developer"
+          content="Web Developer in Nigeria | Tobi Obaremo - Full Stack Developer"
         />
         <meta
           property="og:description"
-          content="Building scalable and modern web applications."
+          content="Portfolio of Tobi Obaremo, a professional web developer in Nigeria, delivering clean, responsive, and performance-driven web applications."
         />
         <meta
           property="og:url"
@@ -42,16 +42,36 @@ const Homepage = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="Tobi Obaremo | Full Stack Developer"
+          content="Web Developer in Nigeria | Tobi Obaremo - Full Stack Developer"
         />
         <meta
           name="twitter:description"
-          content="Portfolio showcasing clean, responsive, and modern projects."
+          content="Portfolio showcasing the work of Tobi Obaremo , a professional web developer in Nigeria with clean, responsive, and modern projects."
         />
         <meta
           name="twitter:image"
           content="https://tobi-obaremo.vercel.app/preview.jpg"
         />
+
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "name": "Tobi Obaremo",
+              "jobTitle": "Web Developer",
+              "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "Nigeria"
+              },
+              "url": "https://tobi-obaremo.vercel.app",
+              "sameAs": [
+                "https://github.com/olaoluwa-007",
+                "https://linkedin.com/in/tobi-obaremo"
+              ]
+            }
+          `}
+        </script>
       </Helmet>
 
       <Hero />

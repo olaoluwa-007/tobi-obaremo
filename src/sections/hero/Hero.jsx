@@ -41,8 +41,8 @@ const Hero = () => {
         transition={{ duration: 0.6, delay: 0.5 }}
       >
         I'm <span className="text-coral font-semibold">Tobi Obaremo</span>, a
-        Full Stack Developer (MERN) passionate about building clean, functional,
-        and performance-driven web experiences.
+        Full Stack Developer (MERN) based in Nigeria, passionate about building clean, functional,
+        and performance-driven web experiences for clients worldwide.
       </motion.p>
 
       <motion.div
